@@ -4,11 +4,18 @@
 #' @param SPECIES The given name of fish species.
 #'
 #' @return A plot of of LENGTH v WEIGHT and a named list of the ddt data frame.
+#' @importFrom dplyr %>% group_by summarize mutate n lst
+#' @importFrom ggplot2 ggplot aes_string geom_point geom_smooth ggtitle
+#' @importFrom stats filter
+#' @importFrom utils write.csv
 #' @export
 #'
 #' @examples
 #' \dontrun{myddt(df = ddt, SPECIES = "CCATFISH")}
 myddt <- function(df, SPECIES) {
+
+  # solve global variable problem
+  RIVER <- WEIGHT <- LENGTH <- NULL
 
   # filter the data frame by a specific species
   dfsubset <- df %>% filter(SPECIES == {{SPECIES}})

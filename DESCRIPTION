@@ -1,7 +1,7 @@
 Package: wats0079MATH4753
 Type: Package
 Title: Compilation of MATH4753 functions
-Version: 0.1.0
+Version: 0.2.0
 Author: Cal Watson
 Maintainer: Cal Watson <cal.watson40@ou.edu>
 Description: This package is a compilation of MATH4753 functions.
@@ -14,4 +14,7 @@ Depends:
     R (>= 2.10)
 Imports: 
     dplyr,
-    ggplot2
+    ggplot2,
+    stats,
+    graphics,
+    utils

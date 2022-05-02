@@ -14,6 +14,7 @@
 #' @examples
 #' mycltu(n=20,iter=10000)
 mycltu=function(n,iter,a=0,b=10){
+  x <- NULL
   ## r-random sample from the uniform
   y=runif(n*iter,a,b)
   ## Place these numbers into a matrix

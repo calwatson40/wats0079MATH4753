@@ -5,7 +5,7 @@
 #' @param param The paramter of interest; e.g., mean, standard deviation
 #' @param ... Any additional number of named or unnamed arguments
 #'
-#' @return A summary of slopes, indieces, the parameter of interest, and
+#' @return A summary of slopes, indices, the parameter of interest, and
 #' a graphical output of where the x and param intersect
 #' @importFrom graphics abline points axis
 #' @export
@@ -39,5 +39,5 @@ mymaxlik=function(lfun,x,param,...){
   #check slopes. If it is a max the slope shoud change sign from + to
   # We should get three + and two -vs
   ifelse(i-3>=1 & i+2<=np, slope<-(y[(i-2):(i+2)]-y[(i-3):(i+1)])/(param[(i-2):(i+2)]-param[(i-3):(i+1)]),slope<-"NA")
-  invisible(list(i=i,parami=param[i],yi=y[i],slope=slope))
+  return(list(i=i,parami=param[i],yi=y[i],slope=slope))
 }

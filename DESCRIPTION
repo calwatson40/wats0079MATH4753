@@ -17,4 +17,9 @@ Imports:
     ggplot2,
     stats,
     graphics,
-    utils
+    utils,
+    grDevices
+Suggests: 
+    rmarkdown,
+    knitr
+VignetteBuilder: knitr

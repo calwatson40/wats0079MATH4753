@@ -16,7 +16,7 @@ mymaxlik(lfun, x, param, ...)
 \item{...}{Any additional number of named or unnamed arguments}
 }
 \value{
-A summary of slopes, indieces, the parameter of interest, and
+A summary of slopes, indices, the parameter of interest, and
 a graphical output of where the x and param intersect
 }
 \description{

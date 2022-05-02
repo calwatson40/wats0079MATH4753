@@ -14,11 +14,13 @@
 #' \dontrun{myddt(df = ddt, SPECIES = "CCATFISH")}
 myddt <- function(df, SPECIES) {
 
+  dframe <- as.data.frame(df)
+
   # solve global variable problem
   RIVER <- WEIGHT <- LENGTH <- NULL
 
   # filter the data frame by a specific species
-  dfsubset <- df %>% filter(SPECIES == {{SPECIES}})
+  dfsubset <- dframe %>% filter(SPECIES == {{SPECIES}})
 
   # write the data frame to csv file
   # LvsWforSPECIES.csv
@@ -38,9 +40,9 @@ myddt <- function(df, SPECIES) {
   print(g)
 
   # create a relative frequency table of RIVER before subsetting
-  freqtable <- df %>% group_by(RIVER) %>% summarize(n = n()) %>% mutate(freq = n / sum(n))
+  freqtable <- dframe %>% group_by(RIVER) %>% summarize(n = n()) %>% mutate(freq = n / sum(n))
 
   # print named list of data frame before subsetting and after, as well as the above frequency table
-  lst(df, dfsubset, freqtable)
+  lst(dframe, dfsubset, freqtable)
 
 }

@@ -1,0 +1,70 @@
+---
+title: "What the Package Does"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{What the package does}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.width = 5,
+  fig.height = 5
+)
+```
+
+```{r setup}
+library(wats0079MATH4753)
+```
+
+# Introduction
+
+This package stores the major functions created in several of the MATH 4753 laboratories throughout the semester. In addition, it includes a data set.
+
+The following functions are briefly described, and an example of each function being used is shown as well.
+
+## First Function: myboot2
+
+This function creates bootstrap confidence intervals for sampling. It returns a graphical representation of the boostrap interval.
+
+```{r}
+myboot2(x=fire$DISTANCE)
+```
+
+## Second Function: mycltu
+
+This function verifies a uniform distribution based on the theory behind the Central Limit Theorem. It returns a histogram of the density curves for the population and sample.
+
+```{r}
+mycltu(n=10, iter=100000, a=0, b=10)
+```
+
+## Third Function: mybin
+
+This function performs a binomial simulation based on the number of iterations, the sample size, and the probability of a success on a given trial. It returns a list of the relative frequencies of successes for each trial (sample) and a graph that models the simulation.
+
+```{r}
+mybin(iter=100,n=10,p=0.7)
+```
+
+## Fourth Function: mymaxlik
+
+This function calculates the maximum log likelihood for a given sample using a specific log function. It returns a summary of the parameter of interest and a graph of where the sample values and parameter of interest intersect.
+
+```{r}
+y = c(2,4,4,6,4,4,2)
+logbin=function(x,param) log(dbinom(x,prob=param,size=20))
+mymaxlik(x=y,param=seq(0,1,length=1000),lfun=logbin,xlab=expression(pi),main="Binomial",cex.main=2)
+```
+
+## Data Set: fire
+
+Below is the fire data set, which contains information on the distance (in miles) from 15 fire stations and the cost of damage (in thousands of dollars).
+
+```{r}
+data("fire")
+knitr::kable(head(fire))
+```

@@ -1,0 +1,100 @@
+==> devtools::check()
+
+i Updating wats0079MATH4753 documentation
+i Loading wats0079MATH4753
+Writing NAMESPACE
+Writing NAMESPACE
+-- Building ----------------- wats0079MATH4753 --
+Setting env vars:
+* CFLAGS    : -Wall -pedantic -fdiagnostics-color=always
+* CXXFLAGS  : -Wall -pedantic -fdiagnostics-color=always
+* CXX11FLAGS: -Wall -pedantic -fdiagnostics-color=always
+* CXX14FLAGS: -Wall -pedantic -fdiagnostics-color=always
+* CXX17FLAGS: -Wall -pedantic -fdiagnostics-color=always
+* CXX20FLAGS: -Wall -pedantic -fdiagnostics-color=always
+-------------------------------------------------
+v  checking for file 'C:\Users\calwa\OneDrive - University of Oklahoma\Shared Folder\Desktop\OU\MATH4753\wats0079MATH4753/DESCRIPTION' (859ms)
+-  preparing 'wats0079MATH4753': (515ms)
+v  checking DESCRIPTION meta-information ... 
+-  installing the package to build vignettes
+v  creating vignettes (7.2s)
+-  checking for LF line-endings in source and make files and shell scripts (535ms)
+-  checking for empty or unneeded directories
+-  building 'wats0079MATH4753_0.2.0.tar.gz'
+   
+-- Checking ----------------- wats0079MATH4753 --
+Setting env vars:
+* _R_CHECK_CRAN_INCOMING_REMOTE_: FALSE
+* _R_CHECK_CRAN_INCOMING_       : FALSE
+* _R_CHECK_FORCE_SUGGESTS_      : FALSE
+* NOT_CRAN                      : true
+-- R CMD check ----------------------------------
+-  using log directory 'C:/Users/calwa/OneDrive - University of Oklahoma/Shared Folder/Desktop/OU/MATH4753/wats0079MATH4753.Rcheck' (852ms)
+-  using R version 4.1.2 (2021-11-01)
+-  using platform: x86_64-w64-mingw32 (64-bit)
+-  using session charset: ISO8859-1
+-  using options '--no-manual --as-cran'
+v  checking for file 'wats0079MATH4753/DESCRIPTION' ... 
+-  checking extension type ... Package
+-  this is package 'wats0079MATH4753' version '0.2.0'
+-  package encoding: UTF-8
+v  checking package namespace information ... 
+v  checking package dependencies (5.3s)
+v  checking if this is a source package ... 
+v  checking if there is a namespace
+v  checking for executable files (828ms)
+v  checking for hidden files and directories ... 
+v  checking for portable file names ... 
+v  checking serialization versions ...
+v  checking whether package 'wats0079MATH4753' can be installed (7s)
+v  checking installed package size (350ms)
+v  checking package directory (538ms)
+v  checking for future file timestamps ... 
+v  checking 'build' directory ...
+v  checking DESCRIPTION meta-information (1.1s)
+v  checking top-level files ...
+v  checking for left-over files
+v  checking index information (666ms)
+v  checking package subdirectories (594ms)
+v  checking R files for non-ASCII characters (342ms)
+v  checking R files for syntax errors (336ms)
+v  checking whether the package can be loaded (568ms)
+v  checking whether the package can be loaded with stated dependencies (559ms)
+v  checking whether the package can be unloaded cleanly (683ms)
+v  checking whether the namespace can be loaded with stated dependencies (551ms)
+v  checking whether the namespace can be unloaded cleanly (678ms)
+v  checking loading without being on the library search path (890ms)
+v  checking dependencies in R code (562ms)
+v  checking S3 generic/method consistency (1.6s)
+v  checking replacement functions (454ms)
+v  checking foreign function calls (564ms)
+v  checking R code for possible problems (6.6s)
+v  checking Rd files (555ms)
+v  checking Rd metadata (345ms)
+v  checking Rd line widths (350ms)
+v  checking Rd cross-references (443ms)
+v  checking for missing documentation entries (449ms)
+v  checking for code/documentation mismatches (1.4s)
+v  checking Rd \usage sections (1.8s)
+v  checking Rd contents (441ms)
+v  checking for unstated dependencies in examples (455ms)
+v  checking contents of 'data' directory ... 
+v  checking data for non-ASCII characters (678ms)
+v  checking LazyData
+v  checking data for ASCII and uncompressed saves (652ms)
+v  checking installed files from 'inst/doc' ... 
+v  checking files in 'vignettes' ... 
+v  checking examples (1.7s)
+v  checking for unstated dependencies in vignettes (570ms)
+v  checking package vignettes in 'inst/doc' ... 
+v  checking re-building of vignette outputs (3.9s)
+v  checking for non-standard things in the check directory ...
+v  checking for detritus in the temp directory
+   
+   
+-- R CMD check results  wats0079MATH4753 0.2.0 --
+Duration: 47s
+
+0 errors v | 0 warnings v | 0 notes v
+
+R CMD check succeeded
